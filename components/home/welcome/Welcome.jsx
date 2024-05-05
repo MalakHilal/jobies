@@ -21,17 +21,17 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}>Hello Malak</Text>
-        <Text style={styles.welcomeMessage}>Find your perfect job</Text>
+        <Text style={styles.userName}>Welcome Malak</Text>
+        <Text style={styles.welcomeMessage}>Get hired quickly</Text>
       </View>
 
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
           <TextInput
+           placeholder='What are you looking for?'
             style={styles.searchInput}
             value={searchTerm}
             onChangeText={(text) => setSearchTerm(text)}
-            placeholder='What are you looking for?'
           />
         </View>
 
